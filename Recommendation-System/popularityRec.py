@@ -5,9 +5,9 @@ import numpy
 os.chdir('Recommendation-System')
 
 # Restaurant ratings [UserID | RestaurantID | Overall | Food | Service] (Scale 0-2)
-frame = pandas.read_csv('data/rating_final.csv')
+frame = pandas.read_csv('data/popularity/rating_final.csv')
 # IDs each restaurant [RestaurantID | TypeOfFood] 
-cuisine = pandas.read_csv('data/chefmozcuisine.csv')
+cuisine = pandas.read_csv('data/popularity/chefmozcuisine.csv')
 print(frame.head(),'\n')
 
 # Creates a new DataFrame by grouping data by placeID and taking the count of rating values
